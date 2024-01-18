@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+/* Style for the main bookshelf container */
+#books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+/* Style for each individual book container */
+.book-container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+}
+
+/* Style for the book image container */
+.book-image {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style for the book image */
+.book-image img {
+    max-width: 100%;
+    max-height: 150px; 
+    border-radius: 5px;
+}
+
+/* Style for the book details container */
+.book-details {
+    text-align: center;
+}
+
+/* Style for the book title */
+.book-details p:nth-child(odd) {
+    margin-bottom: 5px;
+}
+
+/* Style for the book author */
+.book-details p:nth-child(even) {
+    margin-top: 5px;
+}
